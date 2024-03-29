@@ -7,6 +7,7 @@ import Registre from './components/Registre';
 import Verification from './components/Verification';
 import Dashboard from './components/Dashboard';
 import './index.css';
+import Navbar from './components/Home/navbar/Navbar';
 
 
 
@@ -15,11 +16,12 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/registre" element={<Registre />} />
           <Route path="/verification" element={<Verification />} />
           <Route path="/dashboard/*" element={<Dashboard />} />
+          <Route path="/navbar" element={<Navbar/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

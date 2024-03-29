@@ -27,7 +27,7 @@ function Dashboard() {
   }, [locationStr]);
 
   return (
-    <>
+    <div>
       <div className="container">
         <div className="dashboard-container">
 
@@ -102,7 +102,7 @@ function Dashboard() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
